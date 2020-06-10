@@ -128,4 +128,6 @@ source $ZSH/oh-my-zsh.sh
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
 
+alias vim='nvim'
+
 alias cb='clipboard'
