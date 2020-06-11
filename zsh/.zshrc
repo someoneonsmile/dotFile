@@ -125,6 +125,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH=.:~/.local/bin:$PATH
+
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
 
