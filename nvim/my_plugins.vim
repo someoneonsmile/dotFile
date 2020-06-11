@@ -77,9 +77,6 @@ Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
 map <C-m> <Plug>NERDCommenterToggle
 
-" auto pair
-Plug 'jiangmiao/auto-pairs'
-
 " vim-go
 Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
 
