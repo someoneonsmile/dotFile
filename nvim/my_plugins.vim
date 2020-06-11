@@ -25,9 +25,9 @@ call plug#begin('~/.vim/plugged')
 """ }}}
 
 """ 主题 {{{
-    
+
     set termguicolors
-    
+
     " gruvbox
     Plug 'morhetz/gruvbox'
     autocmd vimenter * colorscheme gruvbox
@@ -67,14 +67,14 @@ Plug 'tpope/vim-surround'
 
 " 单词变体/改变连词方式(Coercion)
 " 1) :Subvert/child{,ren}/adult{,s}/g
-" 2) MixedCase (crm), camelCase (crc), snake_case (crs), UPPER_CASE (cru), 
-"   dash-case (cr-), dot.case (cr.), space case (cr<space>), 
+" 2) MixedCase (crm), camelCase (crc), snake_case (crs), UPPER_CASE (cru),
+"   dash-case (cr-), dot.case (cr.), space case (cr<space>),
 "   and Title Case (crt) are all just 3 keystrokes away.
 Plug 'tpope/vim-abolish'
 
 " 注释
 Plug 'preservim/nerdcommenter'
-let g:NERDSpaceDelims = 1 
+let g:NERDSpaceDelims = 1
 map <C-m> <Plug>NERDCommenterToggle
 
 " auto pair

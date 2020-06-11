@@ -82,7 +82,7 @@ plugins=(
     fastfile
     ufw
     sudo
-    
+
     docker
     python
     pylint
