@@ -59,10 +59,19 @@ Plug '/ctrlpvim/ctrlp.vim'
 " 表格对齐
 Plug 'godlygeek/tabular'
 
+" vim easy align
+Plug 'junegunn/vim-easy-align'
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
+" 自动补登括号
+Plug 'Raimondi/delimitMate'
+
 " vim repeat
 Plug 'tpope/vim-repeat'
 
-" vim surround
+" 改变包围方式/在两边添加
+" cs / ysiw
 Plug 'tpope/vim-surround'
 
 " 单词变体/改变连词方式(Coercion)
@@ -92,19 +101,13 @@ Plug 'groenewege/vim-less'
 " git
 Plug 'airblade/vim-gitgutter'
 
-" 切换终端
-Plug 'PangPangPangPangPang/vim-terminal'
-
 " coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Ack
-" Plug 'mileszs/ack.vim'
 
 " fzf.vim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-noremap <silent> <leader>f :FZF<CR>
+noremap <silent> <leader>s :FZF<CR>
 noremap <leader>c :Ag<Space>
 noremap <leader>b :Buffers<CR>
 noremap <leader>g :GFiles<CR>
@@ -136,11 +139,6 @@ let g:lightline = {
       \ 'separator': { 'left': ' ', 'right': ' ' },
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
       \ }
-
-" vim easy align
-Plug 'junegunn/vim-easy-align'
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
 
 " wx 小程序支持
 Plug 'chemzqm/wxapp.vim'

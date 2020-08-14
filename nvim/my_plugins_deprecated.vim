@@ -1,4 +1,3 @@
-
 " ale
 Plug 'dense-analysis/ale'
 let g:ale_linters = {
@@ -28,3 +27,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 " auto pair
 Plug 'jiangmiao/auto-pairs'
+
+" Ack
+Plug 'mileszs/ack.vim'

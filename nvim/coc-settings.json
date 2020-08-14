@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": "/usr/bin/python3",
+    "python.jediPath": "~/.local/lib/python3.8/site-packages",
+    "python.linting.flake8Enabled": true,
+    "snippets.ultisnips.directories": [
+      "UltiSnips",
+      "gosnippets/UltiSnips"
+    ],
+    "languageserver": {
+        "golang": {
+          "command": "gopls",
+          "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+          "filetypes": ["go"]
+        }
+    }
+}
