@@ -68,34 +68,34 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    alias-finder
-    cp
-    compleat
-    common-aliases
-    colored-man-pages
-    colorize
-    git
-    github
-    gitignore
-    fzf
-    fastfile
-    ufw
-    sudo
+# plugins=(
+    # alias-finder
+    # cp
+    # compleat
+    # common-aliases
+    # colored-man-pages
+    # colorize
+    # git
+    # github
+    # gitignore
+    # fzf
+    # fastfile
+    # ufw
+    # sudo
 
-    docker
-    python
-    pylint
-    golang
-    rust
-    cargo
+    # docker
+    # python
+    # pylint
+    # golang
+    # rust
+    # cargo
 
-    tmux
-    tmuxinator
-    zsh_reload
-    emoji
-    emoji-clock
-)
+    # tmux
+    # tmuxinator
+    # zsh_reload
+    # emoji
+    # emoji-clock
+# )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -135,3 +135,54 @@ alias remove='sudo apt-get remove'
 alias vim='nvim'
 
 alias cb='clipboard'
+
+### Added by Zinit's installer
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
+fi
+
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zinit-zsh/z-a-rust \
+    zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-bin-gem-node
+
+### End of Zinit's installer chunk
+
+zinit snippet OMZP::alias-finder
+zinit snippet OMZP::cp
+zinit snippet OMZP::compleat
+zinit snippet OMZP::common-aliases
+zinit snippet OMZP::colored-man-pages
+zinit snippet OMZP::colorize
+zinit snippet OMZP::git
+zinit snippet OMZP::github
+zinit snippet OMZP::gitignore
+zinit snippet OMZP::fzf
+zinit snippet OMZP::fzf
+zinit snippet OMZP::fastfile
+zinit snippet OMZP::ufw
+zinit snippet OMZP::sudo
+
+zinit snippet OMZP::docker
+zinit snippet OMZP::python
+zinit snippet OMZP::pylint
+zinit snippet OMZP::golang
+zinit snippet OMZP::rust
+zinit snippet OMZP::cargo
+
+zinit snippet OMZP::tmux
+zinit snippet OMZP::tmuxinator
+zinit snippet OMZP::zsh_reload
+zinit snippet OMZP::emoji
+zinit snippet OMZP::emoji-clock
