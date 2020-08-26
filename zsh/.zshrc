@@ -171,18 +171,18 @@ zinit snippet OMZP::gitignore
 zinit snippet OMZP::fzf
 zinit snippet OMZP::fzf
 zinit snippet OMZP::fastfile
-zinit snippet OMZP::ufw
+# zinit snippet OMZP::ufw
 zinit snippet OMZP::sudo
 
-zinit snippet OMZP::docker
+# zinit snippet OMZP::docker
 zinit snippet OMZP::python
 zinit snippet OMZP::pylint
 zinit snippet OMZP::golang
-zinit snippet OMZP::rust
-zinit snippet OMZP::cargo
+# zinit snippet OMZP::rust
+# zinit snippet OMZP::cargo
 
 zinit snippet OMZP::tmux
 zinit snippet OMZP::tmuxinator
 zinit snippet OMZP::zsh_reload
-zinit snippet OMZP::emoji
-zinit snippet OMZP::emoji-clock
+# zinit snippet OMZP::emoji
+# zinit snippet OMZP::emoji-clock
