@@ -181,8 +181,8 @@ zinit snippet OMZP::golang
 # zinit snippet OMZP::rust
 # zinit snippet OMZP::cargo
 
-zinit snippet OMZP::tmux
-zinit snippet OMZP::tmuxinator
-zinit snippet OMZP::zsh_reload
+# zinit snippet OMZP::tmux
+# zinit snippet OMZP::tmuxinator
+# zinit snippet OMZP::zsh_reload
 # zinit snippet OMZP::emoji
 # zinit snippet OMZP::emoji-clock
