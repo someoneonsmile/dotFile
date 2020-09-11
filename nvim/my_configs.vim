@@ -194,20 +194,6 @@ noremap <C-i> <C-i>zz
 cmap <C-p> <Up>
 cmap <C-n> <Down>
 
-" 切换目录树窗口
-map <C-h> :NERDTreeToggle<CR>
-tmap <C-h> :NERDTreeToggle<CR>
-
-" 最近文件
-map <C-e> :MRU<CR>
-tmap <C-e> :MRU<CR>
-
-" 注释
-map <C-m> <Plug>NERDCommenterToggle
-
-" 打开的 buffer
-map <c-b> :CtrlPBuffer<cr>
-
 " 切换窗口
 " ^[ = Alt
 map <M-w> <C-w>w
@@ -277,8 +263,13 @@ nnoremap <leader>t :tabe<space>
 map H gT
 map L gt
 
-" 编辑器模式下复制新行
+" 编辑器模式下
+" 复制新行
 imap <C-d> <Esc>Vypi
+" 移动至行首
+imap <C-a> <C-o>^
+" 移动至行尾
+imap <C-e> <C-o>$
 
 " 添加文件后缀类型
 set suffixesadd+=.js
