@@ -12,3 +12,5 @@ sudo apt-get install silversearcher-ag -y
 sudo apt-get install jq -y
 # 多线程下载工具
 sudo apt-get install axel -y
+# 预览 markdown
+go get github.com/charmbracelet/glow
