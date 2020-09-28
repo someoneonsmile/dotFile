@@ -1,0 +1,6 @@
+[user]
+    email =
+    name = wyp
+[core]
+    editor = vim
+    fileMode = false
