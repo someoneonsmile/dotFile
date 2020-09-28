@@ -116,6 +116,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " :Commands 显示 vim command
 " :Maps 显示 所有 noremap
 " :Colors 显示所有 color scheme
+" <C-d> 退出输入, 退出窗口
+" <M-C> 退出窗口 (normal mode)
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 noremap <silent> <leader>s :FZF<CR>
