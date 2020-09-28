@@ -105,10 +105,21 @@ Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " fzf.vim
+" :Buffers 显示 打开的 buffer
+" :Lines 显示 loaded buffers lines
+" :BLines 显示当前 buffer 行, 可以过虑行
+" :Files 显示 file
+" :GFiles 显示 git file
+" :GFiles? 显示 git modified file
+" :Commits 显示 git commit log
+" :BCommits 显示 git commit log for current buffer
+" :Commands 显示 vim command
+" :Maps 显示 所有 noremap
+" :Colors 显示所有 color scheme
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 noremap <silent> <leader>s :FZF<CR>
-noremap <leader>c :Ag<Space>
+noremap <leader>c :Rg<Space>
 noremap <leader>b :Buffers<CR>
 noremap <leader>g :GFiles<CR>
 
