@@ -131,10 +131,9 @@ export GOPROXY=https://goproxy.io
 
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
-
 alias vim='nvim'
-
 alias cb='clipboard'
+alias cdcb='cd `cb`'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
