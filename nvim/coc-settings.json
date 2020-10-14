@@ -6,6 +6,7 @@
       "UltiSnips",
       "gosnippets/UltiSnips"
     ],
+    "coc.preferences.formatOnSaveFiletypes": ["rust"],
     "languageserver": {
         "golang": {
           "command": "gopls",

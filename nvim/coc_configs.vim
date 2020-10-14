@@ -11,7 +11,9 @@ let g:coc_global_extensions = [
             \'coc-neosnippet',
             \'coc-yaml',
             \'coc-highlight',
-            \'coc-markdownlint']
+            \'coc-markdownlint',
+            \'coc-rls']
+
 " define text-obj
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
