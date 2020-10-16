@@ -121,7 +121,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 noremap <silent> <leader>s :FZF<CR>
-noremap <leader>c :Rg<Space>
+noremap <leader>r :Rg<Space>
 noremap <leader>b :Buffers<CR>
 noremap <leader>g :GFiles<CR>
 " Default fzf layout
