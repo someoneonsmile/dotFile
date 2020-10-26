@@ -5,4 +5,4 @@
     editor = vim
     fileMode = false
 [pull]
-	rebase = true
+    rebase = true
