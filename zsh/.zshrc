@@ -125,15 +125,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+########## env ##########
+# path
 export PATH=.:/usr/local/go/bin:~/.local/bin:~/.cargo/bin:$PATH
 
+# go proxy
 export GOPROXY=https://goproxy.io
 
-alias install='sudo apt-get install'
-alias remove='sudo apt-get remove'
+# rustup
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+########## env ##########
+
+########## alias ##########
 alias vim='nvim'
 alias cb='clipboard'
 alias cdcb='cd `cb`'
+########## alias ##########
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
