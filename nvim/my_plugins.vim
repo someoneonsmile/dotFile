@@ -126,7 +126,7 @@ noremap <leader>b :Buffers<CR>
 noremap <leader>g :GFiles<CR>
 " Default fzf layout
 " - down / up / left / right / window
-" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }et g:fzf_layout = { 'down': '40%' }
+" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 let g:fzf_layout = { 'down': '40%' }
 
 " lightline
