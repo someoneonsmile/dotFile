@@ -86,6 +86,9 @@ Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
 map <C-m> <Plug>NERDCommenterToggle
 
+" lspcnofig
+:Plug 'neovim/nvim-lspconfig'
+
 " vim-go
 Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
 
