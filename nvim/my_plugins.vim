@@ -54,7 +54,10 @@ map <C-e> :MRU<CR>
 tmap <C-e> :MRU<CR>
 
 " lspcnofig
-:Plug 'neovim/nvim-lspconfig'
+Plug 'neovim/nvim-lspconfig'
+
+" completion
+Plug 'nvim-lua/completion-nvim'
 
 " vim easy align
 Plug 'junegunn/vim-easy-align'
