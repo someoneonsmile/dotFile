@@ -4,7 +4,7 @@
         require'completion'.on_attach()
     end
     local servers = {
-        'rust_analyzer', 'hls', 'gopls',$
+        'rust_analyzer', 'hls', 'gopls',
         'jedi_language_server', 'pyls',
         'pyright', 'vuels', 'tsserver',
         'vimls', 'purescriptls', 'jsonls',
