@@ -16,3 +16,5 @@ require'lspconfig'.html.setup{}
 require'lspconfig'.bashls.setup{}
 require'lspconfig'.sqlls.setup{}
 EOF
+
+set omnifunc=v:lua.vim.lsp.omnifunc

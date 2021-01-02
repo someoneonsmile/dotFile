@@ -53,19 +53,13 @@ Plug 'vim-scripts/mru.vim'
 map <C-e> :MRU<CR>
 tmap <C-e> :MRU<CR>
 
-" ctrlp
-Plug '/ctrlpvim/ctrlp.vim'
-
-" 表格对齐
-Plug 'godlygeek/tabular'
+" lspcnofig
+:Plug 'neovim/nvim-lspconfig'
 
 " vim easy align
 Plug 'junegunn/vim-easy-align'
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
-" 自动补登括号
-Plug 'Raimondi/delimitMate'
 
 " vim repeat
 Plug 'tpope/vim-repeat'
@@ -81,13 +75,14 @@ Plug 'tpope/vim-surround'
 "   and Title Case (crt) are all just 3 keystrokes away.
 Plug 'tpope/vim-abolish'
 
-" 注释
-Plug 'preservim/nerdcommenter'
-let g:NERDSpaceDelims = 1
-map <C-m> <Plug>NERDCommenterToggle
+" 注释(gc), 可用于文本对象
+Plug 'tpope/vim-commentary'
 
-" lspcnofig
-:Plug 'neovim/nvim-lspconfig'
+" git
+Plug 'tpope/vim-fugitive'
+
+" 自动补全括号
+Plug 'rstacruz/vim-closer'
 
 " vim-go
 Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}

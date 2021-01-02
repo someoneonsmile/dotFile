@@ -28,5 +28,19 @@ Plug 'vim-airline/vim-airline-themes'
 " auto pair
 Plug 'jiangmiao/auto-pairs'
 
+" 自动补登括号
+Plug 'Raimondi/delimitMate'
+
 " Ack
 Plug 'mileszs/ack.vim'
+
+" ctrlp
+Plug '/ctrlpvim/ctrlp.vim'
+
+" 表格对齐
+Plug 'godlygeek/tabular'
+
+" 注释
+Plug 'preservim/nerdcommenter'
+let g:NERDSpaceDelims = 1
+map <C-m> <Plug>NERDCommenterToggle
