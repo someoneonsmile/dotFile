@@ -59,6 +59,9 @@ Plug 'neovim/nvim-lspconfig'
 " completion
 Plug 'nvim-lua/completion-nvim'
 
+" 代码片断补全
+Plug 'honza/vim-snippets'
+
 " vim easy align
 Plug 'junegunn/vim-easy-align'
 xmap ga <Plug>(EasyAlign)
@@ -83,6 +86,9 @@ Plug 'tpope/vim-commentary'
 
 " git
 Plug 'tpope/vim-fugitive'
+
+" 自动配对关键字
+Plug 'tpope/vim-endwise'
 
 " 自动补全括号
 Plug 'rstacruz/vim-closer'
