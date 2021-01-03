@@ -7,6 +7,9 @@ call plug#begin('~/.vim/plugged')
     " e 整个文件
     Plug 'kana/vim-textobj-entire'
 
+    " l 关键字
+    Plug 'kana/vim-textobj-line'
+
     " i 缩进
     Plug 'kana/vim-textobj-indent'
 
@@ -20,7 +23,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'sgur/vim-textobj-parameter'
 
     " o 创建对象
-    Plug 'someoneonsmile/vim-plugs', { 'rtp': 'textobj-objnew','for':['java'] }
+    Plug 'someoneonsmile/vim-textobj-objnew', { 'for': ['java'] }
 
 """ }}}
 
