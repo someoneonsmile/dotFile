@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'sgur/vim-textobj-parameter'
 
     " o 创建对象
-    Plug 'someoneonsmile/vim-textobj-objnew', { 'rtp': 'textobj-objnew','for':['java'] }
+    Plug 'someoneonsmile/vim-plugs', { 'rtp': 'textobj-objnew','for':['java'] }
 
 """ }}}
 
@@ -94,7 +94,7 @@ Plug 'tpope/vim-endwise'
 Plug 'rstacruz/vim-closer'
 
 " vim-go
-Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
+Plug 'fatih/vim-go'
 
 " rust
 Plug 'rust-lang/rust.vim'
