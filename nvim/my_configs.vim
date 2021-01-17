@@ -148,6 +148,14 @@ set clipboard^=unnamed,unnamedplus
 " 设置行号
 set nu
 
+" 添加文件后缀类型
+set suffixesadd+=.js
+
+" 语法折叠 {{{
+    set foldmethod=syntax
+    set foldlevelstart=999
+" }}}
+
 " custom command {{{
     " 文件保存没有权限时
     " :W sudo saves the file
@@ -161,94 +169,88 @@ set nu
     let mapleader = ","
 
     " Fast saving
-    nmap <leader>w :w!<cr>
-    nmap <leader>q :q!<CR>
-    nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
-" }}}
-
-
-" 语法折叠 {{{
-    set foldmethod=syntax
-    set foldlevelstart=999
+    nnoremap <leader>w :w!<cr>
+    nnoremap <leader>q :q!<CR>
+    nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 " }}}
 
 
 " 使光标位置屏幕中间位置
-map j gjzz
-map k gkzz
-map * *zz
-map # #zz
-map n nzz
+noremap j gjzz
+noremap k gkzz
+noremap * *zz
+noremap # #zz
+noremap n nzz
 noremap <S-n> <S-n>zz
 noremap <C-o> <C-o>zz
 noremap <C-i> <C-i>zz
 
 " 命令行上下选择
-cmap <C-p> <Up>
-cmap <C-n> <Down>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 
 " 切换窗口
 " ^[ = Alt
-map <M-w> <C-w>w
-map <M-h> <C-w>h
-map <M-j> <C-w>j
-map <M-k> <C-w>k
-map <M-l> <C-w>l
-map <M-+> <C-w>+
-map <M-=> <C-w>=
-map <M--> <C-w>-
-map <M-<> <C-w><
-map <M->> <C-w>>
+noremap <M-w> <C-w>w
+noremap <M-h> <C-w>h
+noremap <M-j> <C-w>j
+noremap <M-k> <C-w>k
+noremap <M-l> <C-w>l
+noremap <M-+> <C-w>+
+noremap <M-=> <C-w>=
+noremap <M--> <C-w>-
+noremap <M-<> <C-w><
+noremap <M->> <C-w>>
 
 " <C-w>o 关闭其它所有窗口 :only
 " :qa 关闭所有分屏
 " <C-w>T move split to new tab
-map <M-r> <C-w>r
-map <M-H> <C-w>H
-map <M-L> <C-w>L
-map <M-J> <C-w>J
-map <M-K> <C-w>K
-map <M-T> <C-w>T
+noremap <M-r> <C-w>r
+noremap <M-H> <C-w>H
+noremap <M-L> <C-w>L
+noremap <M-J> <C-w>J
+noremap <M-K> <C-w>K
+noremap <M-T> <C-w>T
 
 " <C-w>c :close - close split
 " <C-w>q :q - close split and quit file
 " <C-w>n :new [file]
-map <M-n> <C-w>n
-map <M-s> <C-w>s
-map <M-v> <C-w>v
-map <M-c> <C-w>c
-map <M-q> <C-w>q
-map <M-o> <C-w>o
+noremap <M-n> <C-w>n
+noremap <M-s> <C-w>s
+noremap <M-v> <C-w>v
+noremap <M-c> <C-w>c
+noremap <M-q> <C-w>q
+noremap <M-o> <C-w>o
 
 
 " 终端模式
 " set termwinkey=<C-w>
-tmap <Esc> <C-\><C-n>
-tmap <M-w> <C-w>w
-tmap <M-p> <C-w>p
-tmap <M-h> <C-w>h
-tmap <M-j> <C-w>j
-tmap <M-k> <C-w>k
-tmap <M-l> <C-w>l
-tmap <M-+> <C-w>+
-tmap <M-=> <C-w>=
-tmap <M--> <C-w>-
-tmap <M-<> <C-w><
-tmap <M->> <C-w>>
+tnoremap <Esc> <C-\><C-n>
+tnoremap <M-w> <C-w>w
+tnoremap <M-p> <C-w>p
+tnoremap <M-h> <C-w>h
+tnoremap <M-j> <C-w>j
+tnoremap <M-k> <C-w>k
+tnoremap <M-l> <C-w>l
+tnoremap <M-+> <C-w>+
+tnoremap <M-=> <C-w>=
+tnoremap <M--> <C-w>-
+tnoremap <M-<> <C-w><
+tnoremap <M->> <C-w>>
 
-tmap <M-r> <C-w>r
-tmap <M-L> <C-w>L
-tmap <M-J> <C-w>J
-tmap <M-H> <C-w>H
-tmap <M-K> <C-w>K
-tmap <M-T> <C-w>T
+tnoremap <M-r> <C-w>r
+tnoremap <M-L> <C-w>L
+tnoremap <M-J> <C-w>J
+tnoremap <M-H> <C-w>H
+tnoremap <M-K> <C-w>K
+tnoremap <M-T> <C-w>T
 
-tmap <M-n> <C-w>n
-tmap <M-s> <C-w>s
-tmap <M-v> <C-w>v
-tmap <M-c> <C-w>c
-tmap <M-q> <C-w>q
-tmap <M-o> <C-w>o
+tnoremap <M-n> <C-w>n
+tnoremap <M-s> <C-w>s
+tnoremap <M-v> <C-w>v
+tnoremap <M-c> <C-w>c
+tnoremap <M-q> <C-w>q
+tnoremap <M-o> <C-w>o
 
 
 " 切换标签页
@@ -258,12 +260,9 @@ nnoremap L gt
 
 " 编辑器模式下
 " 复制新行
-imap <C-d> <Esc>Ypi
+inoremap <C-d> <Esc>Ypi
 " 移动至行首
-imap <C-a> <C-o>^
+inoremap <C-a> <C-o>^
 " 移动至行尾
-imap <C-e> <C-o>$
-
-" 添加文件后缀类型
-set suffixesadd+=.js
+inoremap <C-e> <C-o>$
 
