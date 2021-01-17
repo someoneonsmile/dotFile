@@ -135,12 +135,17 @@ export GOPROXY=https://goproxy.io
 # rustup
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+
+# proxy
+export ALL_PROXY=socks5://127.0.0.1:1080
 ########## env ##########
 
 ########## alias ##########
 alias vim='nvim'
 alias cb='clipboard'
 alias cdcb='cd `cb`'
+alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+alias unsetproxy="unset ALL_PROXY"
 ########## alias ##########
 
 ### Added by Zinit's installer
