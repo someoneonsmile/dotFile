@@ -1,6 +1,4 @@
 " GUI {{{
-    " colorscheme Tomorrow-Night
-
     source $VIMRUNTIME/delmenu.vim
     source $VIMRUNTIME/menu.vim
     " 不显示工具/菜单栏
@@ -35,13 +33,6 @@
     " Set to auto read when a file is changed from the outside
     set autoread
 
-    " With a map leader it's possible to do extra key combinations
-    " like <leader>w saves the current file
-    let mapleader = ","
-
-    " Fast saving
-    nmap <leader>w :w!<cr>
-
     "Always show current position
     set ruler
 
@@ -62,7 +53,7 @@
     set smartcase
 
     " Highlight search results
-    set hlsearch
+    set nohlsearch
 
     " Makes search act like search in modern browsers
     set incsearch
@@ -151,15 +142,11 @@
 
 """}}}
 
-" leader key
-let mapleader=","
-
 " 使用系统剪贴板
-set clipboard+=unnamed
-set ts=4
-set nu
+set clipboard^=unnamed,unnamedplus
 
-set foldlevelstart=999
+" 设置行号
+set nu
 
 " custom command {{{
     " 文件保存没有权限时
@@ -169,8 +156,14 @@ set foldlevelstart=999
 " }}}
 
 " leader key {{{
-    map <leader>q :q!<CR>
-    map <leader>cd :cd %:p:h<cr>:pwd<cr>
+    " With a map leader it's possible to do extra key combinations
+    " like <leader>w saves the current file
+    let mapleader = ","
+
+    " Fast saving
+    nmap <leader>w :w!<cr>
+    nmap <leader>q :q!<CR>
+    nmap <leader>cd :cd %:p:h<cr>:pwd<cr>
 " }}}
 
 
@@ -260,12 +253,12 @@ tmap <M-o> <C-w>o
 
 " 切换标签页
 nnoremap <leader>t :tabe<space>
-map H gT
-map L gt
+nnoremap H gT
+nnoremap L gt
 
 " 编辑器模式下
 " 复制新行
-imap <C-d> <Esc>Vypi
+imap <C-d> <Esc>Ypi
 " 移动至行首
 imap <C-a> <C-o>^
 " 移动至行尾

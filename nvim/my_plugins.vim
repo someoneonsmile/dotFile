@@ -36,6 +36,7 @@ call plug#begin('~/.vim/plugged')
     autocmd vimenter * colorscheme gruvbox
     set background=dark
     let g:gruvbox_contrast_dark = 'sort'
+    " highlight Normal guibg=none
 
 """ }}}
 
