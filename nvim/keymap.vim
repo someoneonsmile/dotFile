@@ -15,6 +15,10 @@ noremap <S-n> <S-n>zz
 noremap <C-o> <C-o>zz
 noremap <C-i> <C-i>zz
 
+" & 命令, 默认不记住上次的标识
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
 " 命令行上下选择
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
@@ -89,8 +93,6 @@ nnoremap H gT
 nnoremap L gt
 
 " 编辑器模式下
-" 复制新行
-inoremap <C-d> <Esc>Ypi
 " 移动至行首
 inoremap <C-a> <C-o>^
 " 移动至行尾
